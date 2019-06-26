@@ -32,7 +32,7 @@ export default {
     }
   },
   mounted() {
-    ace.config.set('basePath','../node_modules/ace-builds/src-noconflict');
+    ace.config.set('basePath','./ace-builds/src-noconflict');
     this.editor = ace.edit('editor');
     this.editor.setTheme('ace/theme/monokai');
     this.editor.session.setMode('ace/mode/javascript');
