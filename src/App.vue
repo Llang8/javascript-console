@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import * as ace from '../node_modules/ace-builds/src-noconflict/ace';
+import * as ace from '../src/ace-builds/src-noconflict/ace';
 import { AceHandler } from './aceHandler';
 
 export default {
@@ -32,7 +32,7 @@ export default {
     }
   },
   mounted() {
-    ace.config.set('basePath','./ace-builds/src-noconflict');
+    ace.config.set('basePath','../src/ace-builds/src-noconflict');
     this.editor = ace.edit('editor');
     this.editor.setTheme('ace/theme/monokai');
     this.editor.session.setMode('ace/mode/javascript');
